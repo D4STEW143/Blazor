@@ -1,0 +1,16 @@
+﻿@page "/Numbers"
+@rendermode InteractiveServer
+
+<h3>Numbers</h3>
+<hr />
+<h5>Factorial</h5>
+<label for="factorial">Factorial of: </label>
+<input type="number" name="factorial" @bind="input_factorial" @onclick="Factorial"/>
+<label for="answer" >is </label>
+<span name="answer">@result_factorial</span>
+<hr/>
+<h5>Fibanacci row</h5>
+<label></label>
+<input type="number" name="fibonacci" @bind="input_fibonacci" @onclick="Fibonacci"/>
+<label for="result">is</label>
+<label name="result">@result_fibonacci</label>

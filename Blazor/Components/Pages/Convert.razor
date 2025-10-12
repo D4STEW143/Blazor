@@ -1,0 +1,9 @@
+﻿@page "/convert"
+@rendermode InteractiveServer
+
+<h3>Convert</h3>
+
+<p><strong>Enter a number like: 0b101</strong> (Binary, with prefix), <strong>0o755</strong> (Octal, with prefix),<strong>123</strong> (Decimal), <strong>0xFF</strong> (Hexadecimal, with prefix).</p>
+<input type="text" name="input_num" @bind="s_input" @onclick="SystemDetection" pattern="[0-9][A-Fa-f][Xx]" required/>
+<input type="button" value="Convert"/>
+
