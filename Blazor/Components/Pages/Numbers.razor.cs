@@ -6,7 +6,7 @@ namespace Blazor.Components.Pages {
 		BigInteger result_factorial;
 
 		int input_fibonacci;
-		List<int> Result_fibonacci = new List<int> { };
+		List<BigInteger> Result_fibonacci = new List<BigInteger> { };
 		string result_fibonacci = string.Empty;
 
 
@@ -18,11 +18,11 @@ namespace Blazor.Components.Pages {
 		}
 
 		void Fibonacci() {
-			int a = 0, b = 1;
+			BigInteger a = 0, b = 1;
 			Result_fibonacci.Add(a);
 			Result_fibonacci.Add(b);
 			for (int i = 1; i <= input_fibonacci - 1; i++) {
-				int i_temp = a;
+				BigInteger i_temp = a;
 				a = b;
 				b = i_temp + b;
 				Result_fibonacci.Add(b);
