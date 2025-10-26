@@ -50,7 +50,7 @@
     private MoviesContext context = default!;
 
     [SupplyParameterFromQuery]
-    string TitleFilter { get; set; } = string.Empty;
+    string? TitleFilter { get; set; } = string.Empty;
     IQueryable<Movie> FilteredMovies =>
     context.Movie.Where(m => m.Title.Contains(TitleFilter ?? string.Empty));
 
